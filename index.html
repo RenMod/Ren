@@ -2,106 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rnmd Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+
+        header {
+            background-color: #0D5975;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00E9F6;
+            font-size: 24px;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .banner {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .category-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .category-buttons button {
+            background-color: #3D8F9F;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .category-buttons button:hover {
+            background-color: #00E9F6;
+        }
+
+        .popular-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .popular-section h2 {
+            font-size: 24px;
+        }
+
+        .fire-emoji {
+            font-size: 30px;
+            color: #FF4500;
+        }
+
+        @media (max-width: 768px) {
+            .category-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h2 style="color: rgb(243, 238, 238);">Login</h2><br>
-            <form>
-                <input type="text" class="form-control" id="username" placeholder="Username">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-            </form>
-            <div class="buttons">
-                <a href="./menu.html"><button class="btn">Login</button></a>
-                <a href="menu.html"><button class="btn">Skip</button></a>
-                </div>
-        </div>
-        
-    </div>
-    <div class="bg-container">
-        <div class="bg" style="background-image: url('background.jpg');"></div>
+
+    <header>
+        <h1>Rnmd Store</h1>
+    </header>
+
+    <div class="banner">
+        <img src="https://via.placeholder.com/800x300" alt="Rnmd Store Banner">
     </div>
 
-    <script src="script.js"></script>
+    <div class="category-buttons">
+        <button>Pulsa Reguler</button>
+        <button>PLN</button>
+        <button>E-Money</button>
+        <button>Paket SMS & Telpon</button>
+        <button>Games</button>
+        <button>Voucher</button>
+        <button>Pulsa Transfer</button>
+        <button>Data Internet</button>
+        <button>Akun Premium</button>
+        <button>TV</button>
+        <button>Masa Aktif</button>
+        <button>Streaming</button>
+    </div>
+
+    <div class="popular-section">
+        <h2><span class="fire-emoji">🔥</span> Populer</h2>
+    </div>
+
 </body>
 </html>
-<style>
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 22px;
-    }
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-image: url('https://pomf2.lain.la/f/s5ujcxa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-box {
-    width: 50%;
-    height: 50%;
-    background-image: url('https://pomf2.lain.la/f/s5ujcxa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    border: 1px solid #b3aeae;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.form-control {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid wheat;
-}
-
-.btn {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    display: flex;
-    transition: backgroun-color0.3s;
-}
-.btn:hover {
-    background-color: #3e8e41;
-}
-
-.bg-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-</style>
